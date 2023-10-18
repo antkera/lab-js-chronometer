@@ -27,13 +27,17 @@ class Chronometer {
 
   computeTwoDigitNumber(value) {
     // ... your code goes here
-    let str = "0";
-    let val = value.toString();
-    if (value > 9) {
-      return val;
-    } else {
-      return str + val;
-    }
+    // let str = "0";
+    // let val = value.toString();
+    // if (value > 9) {
+    //   return val;
+    // } else {
+    //   return str + val;
+    // }
+
+    if (value > 9){
+      return `${value}`
+    }else {return `0${value}`}
   }
 
   stop() {
